@@ -8,6 +8,8 @@ $("document").ready(
         $(this).css("width", "150px");
     })
 );
+var text = "";
+var urlTweet = "https://twitter.com/intent/tweet?" + text + "&via=twitterdev";
 
 var quotes = [{
     "quote": "Say what~~~~~~",
@@ -19,10 +21,22 @@ function getQuoteInfo() {
     return quotes[index];
 }
 
+function addToQuotes(quote, author) {
+    quotes.push([quote, author]);
+}
+
 function placeQuote() {
     quoteInfo = getQuoteInfo();
+
+    text = quoteInfo["quote"] + quoteInfo["author"];
+
+    $("#quote_author").append("text: " + text + "");
     $("#quote").remove("");
     $("#quote_author").append("<p id=\"quote\">\"" + quoteInfo.quote + "\"</p>");
     $("#author").remove("");
     $("#quote_author").remove("#author").append("<p id=\"author\">" + quoteInfo.author + "</p>");
 }
+
+console.log(text);
+
+function setTweet() {}

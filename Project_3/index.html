@@ -8,10 +8,11 @@
 
     <title>Random Quote Machine</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://dev.twitter.com/web/tweet-button" />
+    <script type="text/javascript" src="javascript/interaction.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/interaction.js"></script>
+    <!--Twitter Intents-->
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 </head>
 
 <body>
@@ -24,8 +25,9 @@
             <p id="quote">"My quote goes here."</p>
 
             <p id="author">"-Me"</p>
-            <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">
-          Tweet</a>
+
+            <a href="https://twitter.com/intent/retweet?tweet_id=463440424141459456">Retweet</a>
+            <a href="https://twitter.com/intent/like?tweet_id=463440424141459456">Like</a>
         </div>
     </div>
 </body>
