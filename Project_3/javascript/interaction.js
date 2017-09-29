@@ -1,4 +1,4 @@
-$("document").ready(
+/*$(document).ready(function() {
     $("button.btnReg").hover(function() {
         $(this).css("color", "#4894D7");
         $(this).css("background-color", "white");
@@ -7,17 +7,18 @@ $("document").ready(
         $(this).css("height", "50px");
         $(this).css("width", "150px");
     })
-);
+});*/
 var text = "";
 var urlTweet = "https://twitter.com/intent/tweet?" + text + "&via=twitterdev";
+var numQuotes = 0;
+var quotes = [];
 
-var quotes = [{
-    "quote": "Say what~~~~~~",
-    "author": "Jo Em"
-}]
+quotes.push({ "quote": "Say what~~~~~~", "author": "Jo Em" });
+quotes.push({ "quote": "YEAH~!", "author": "Lil John" });
 
 function getQuoteInfo() {
-    var index = Math.floor(Math.random() * quotes.length);
+    var randomIndex = Math.random() * quotes.length;
+    var index = Math.floor(randomIndex);
     return quotes[index];
 }
 
