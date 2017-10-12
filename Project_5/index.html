@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://dev.twitter.com/web/tweet-button" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" />
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/interaction.js"></script>
 </head>
 
 <body>
+    <div id="main">
 
+        <form id="search">
+            <input type="text" name="search" /><br><br>
+            <button id="btn_search" class="fa fa-4x fa-search btn btn-sm btn-dark"></button>
+            <button class="fa fa-4x fa-random btn btn-sm "><a href="https://en.wikipedia.org/wiki/Special:Random" ></a></button>
+        </form>
+
+        <div id="results"></div>
+    </div>
 </body>
 
 </html>

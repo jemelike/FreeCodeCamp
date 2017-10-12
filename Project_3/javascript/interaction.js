@@ -9,7 +9,7 @@
     })
 });*/
 var text = "";
-var urlTweet = "https://twitter.com/intent/tweet?" + text + "&via=twitterdev";
+
 var numQuotes = 0;
 var quotes = [];
 
@@ -22,22 +22,28 @@ function getQuoteInfo() {
     return quotes[index];
 }
 
-function addToQuotes(quote, author) {
-    quotes.push([quote, author]);
+
+
+function setTweet() {
+    var urlTweet = "https://twitter.com/intent/tweet?text=" + text + "&via=twitterdev";
+    $("#elTweet").remove("");
+    $("#tweet").append("<a id=\"elTweet\" href=" + urlTweet + ">Retweet</a>");
+
 }
 
 function placeQuote() {
     quoteInfo = getQuoteInfo();
 
-    text = quoteInfo["quote"] + quoteInfo["author"];
+    text = "\"" + quoteInfo["quote"] + "\" , " + quoteInfo["author"];
+    text = text.replace(/\s/gmi, "+");
 
-    $("#quote_author").append("text: " + text + "");
     $("#quote").remove("");
     $("#quote_author").append("<p id=\"quote\">\"" + quoteInfo.quote + "\"</p>");
     $("#author").remove("");
     $("#quote_author").remove("#author").append("<p id=\"author\">" + quoteInfo.author + "</p>");
+    setTweet();
 }
 
-console.log(text);
-
-function setTweet() {}
+function addToQuotes(quote, author) {
+    quotes.push([quote, author]);
+}
