@@ -2,11 +2,11 @@ var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "
 var container;
 
 function displayUser() {
-    container = document.getElementById('container');
+    container = document.getElementById('user_list');
     users.forEach(function(user) {
         console.log(user);
         console.log(container);
-        container.innerHTML += "<div id=" + user + "class =''>" + user + "</div>";
+        container.innerHTML += "<li id=" + user + "class ='row_item'>" + user + "</li>";
     })
 }
 
