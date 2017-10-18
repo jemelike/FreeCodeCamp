@@ -43,7 +43,6 @@ function getLocation() {
 function showPosition(position) {
     $.getJSON('https://fcc-weather-api.glitch.me/api/current?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude)
         .done(function(locationData) {
-            console.log(weather_info);
 
             removeContent();
             appendContent(locationData.name, locationData["main"].temp, locationData["weather"][0]);
