@@ -8,16 +8,14 @@
 }
 
 #main {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
     border: solid;
-    padding: 12.5%;
-    width: 75%;
-    left: 12.5%;
-    margin: 5%
+    width: 800px;
+    margin-left: 25%;
 }
 
 #about {
+    margin: 50px;
     padding: 50px 0;
     top: 50%;
     /* Set the navbar to fixed position */
@@ -26,13 +24,15 @@
 #top {
     background-color: white;
     top: 25%;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     /* Set the navbar to fixed position */
 }
 
 #portfolio {
     padding: 50px 0;
     top: 75%;
+    margin: 50px;
     /* Set the navbar to fixed position */
 }
 
