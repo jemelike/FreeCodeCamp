@@ -1,0 +1,61 @@
+#nav-right {
+    text-align: right;
+    font-size: 24px;
+}
+
+#nav-left {
+    display: block;
+}
+
+#main {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: solid;
+    padding: 12.5%;
+    width: 75%;
+    left: 12.5%;
+    margin: 5%
+}
+
+#about {
+    padding: 50px 0;
+    top: 50%;
+    /* Set the navbar to fixed position */
+}
+
+#top {
+    background-color: white;
+    top: 25%;
+    border-radius: 15px;
+    /* Set the navbar to fixed position */
+}
+
+#portfolio {
+    padding: 50px 0;
+    top: 75%;
+    /* Set the navbar to fixed position */
+}
+
+#contact {
+    background-color: white;
+    overflow: hidden;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 50%;
+    /* Full width */
+    left: 25%;
+}
+
+.img-std {
+    border-radius: 50%;
+    border: solid;
+    height: 200px;
+    width: 200px;
+}
