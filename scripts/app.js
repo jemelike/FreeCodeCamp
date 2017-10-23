@@ -1,8 +1,11 @@
-var myRepo = "https://api.github.com/repos/jemelike/FreeCodeCamp";
+var myRepo = "https://api.github.com/repos/jemelike/FreeCodeCamp/contents";
 angular.module("MyApp", ["ngMaterial"])
 
 .controller("test", function() {
-    console.log("hi");
+    $.getJSON(myRepo).done(function(data) {
+        console.log(data);
+    });
+
 })
 
 .controller("TabOne", function($scope) {
