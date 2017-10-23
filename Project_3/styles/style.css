@@ -1,0 +1,71 @@
+html {
+    background-color: #1A85B0
+}
+
+body {
+    top: -15px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: skyblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+button {
+    border: 5px solid darkblue;
+    padding: 25px 50px;
+    width: 200px;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-radius: 15px;
+    background-color: silver
+}
+
+button:hover {
+    border: 5px solid darkblue;
+    background-color: darkblue;
+    padding: 25px 50px;
+    width: 200px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: gainsboro;
+    border-radius: 15px;
+}
+
+#tweet {
+    margin: 50px 0px
+}
+
+#tweet a {
+    margin-top: 100px;
+    height: 100px;
+    width: 200px;
+    border: 5px solid darkblue;
+    padding: 25px 50px;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-radius: 15px;
+    background-color: silver
+}
+
+#tweet a:hover {
+    margin-top: 100px;
+    width: 200px;
+    height: 100px;
+    border: 5px solid darkblue;
+    background-color: darkblue;
+    padding: 25px 50px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: gainsboro;
+    border-radius: 15px;
+}

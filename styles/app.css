@@ -1,9 +1,14 @@
 html {
-    background: #eee;
+    background: rgba(251, 194, 194, 0.58);
 }
 
 body {
     line-height: 1.4;
-    max-width: 500px;
+    max-width: 800px;
     margin: 20px auto;
+    background-color: rgba(251, 194, 194, 0.0)
+}
+
+a {
+    display: inline;
 }

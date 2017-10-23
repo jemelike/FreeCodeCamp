@@ -44,6 +44,6 @@ function placeQuote() {
     setTweet();
 }
 
-function addToQuotes(quote, author) {
+function addQuote(quote, author) {
     quotes.push([quote, author]);
 }

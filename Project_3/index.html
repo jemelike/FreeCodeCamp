@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Random Quote Machine</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styles\style.css" />
     <script type="text/javascript" src="javascript/interaction.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,13 +22,15 @@
         <h2>Developed By Joseph</h2>
         <p>Click the Button below to be enlightened</p>
         <button onclick="placeQuote()" class="btnReg">New Quote</button>
+        <button onclick="addQuote()" class="btnReg">Share a Quote</button>
         <div id="quote_author">
-            <p id="quote">"My quote goes here."</p>
+            <p id="quote"></p>
 
-            <p id="author">"-Me"</p>
+            <p id="author"></p>
         </div>
 
-        <div id="tweet"></div>
+        <div id="tweet">
+        </div>
     </div>
 </body>
 
