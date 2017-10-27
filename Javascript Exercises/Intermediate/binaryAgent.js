@@ -18,15 +18,28 @@ Algorithm:
 4. join the in words together
 */
 function convertToInt(str) {
+    var counter = str.length - 1;
+    var total = 0;
+    str.split('').forEach(function(i) {
+        total += Math.pow(2, counter) * parseInt(i);
+        counter--;
+    })
 
+    return total;
 }
 
 function binaryAgent(str) {
     const binary_string = str.split(" ");
+    var int_binary = [];
+    var result = "";
+    binary_string.forEach(function(i) { int_binary.push(convertToInt(i)) })
 
-    binary_string.forEach(function(i) { console.log(typeof i) })
+    int_binary.forEach(function(element) {
+        result += String.fromCharCode(element);
+    });
 
-    return str;
+    console.log(result);
+    return result;
 
 }
 
