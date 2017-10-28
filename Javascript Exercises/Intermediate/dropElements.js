@@ -25,7 +25,16 @@ Ask for help on the forum
   */
 
 function dropElements(arr, func) {
+    if (arr.length > 0 && func(arr[0]) == false)
+        arr.shift();
+    else
+        return arr;
     // Drop them elements.
+    if (func(arr[0]) != true)
+        dropElements(arr, func);
+    else
+        console.log(arr);
+
     return arr;
 }
 
