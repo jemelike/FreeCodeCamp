@@ -1,27 +1,15 @@
 /**Convert HTML Entities
-Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.
-
-Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write your own code.
-
-Here are some helpful links:
-
-RegExp
-HTML Entities
-String.prototype.replace()
-Run tests (ctrl + enter)
-Reset your code
-Get a hint
-Ask for help on the forum
-
-  * Your output will go here.
-  * Any console.log() -type
-  * statements will appear in
-  * your browser's DevTools
-  * JavaScript console as well.
-  */
+ * Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.
+ * Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write your own code.
+ * Here are some helpful links:
+ * RegExp
+ * HTML Entities
+ * String.prototype.replace()
+ */
 
 function convertHTML(str) {
     // &colon;&rpar;
+    console.log(str.replace(/&/gi, "&amp;").replace(/</gi, "&lt;").replace(/>/gi, "&gt;").replace(/'/gi, "&apos;").replace(/"/gi, "&quot;"));
     return str;
 }
 
