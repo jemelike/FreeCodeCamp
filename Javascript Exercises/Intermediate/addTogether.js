@@ -29,14 +29,28 @@ Ask for help on the forum
   * JavaScript console as well.
   */
 
-function addTogether() {
-    return false;
+function addTogether(num1, num2) {
+
+    var holder = num1;
+    if (typeof num1 === 'number') {
+        if (typeof num2 === 'undefined') {
+            return function(num) {
+                if (typeof num === 'number')
+                    return num + holder;
+            };
+        } else if (typeof num2 === 'number') {
+            return num1 + num2;
+        }
+    } else {
+        return undefined;
+    }
 }
 
-addTogether(2, 3);
+console.log(addTogether(2, 3));
 
 addTogether(2, 3) // should return 5.
-addTogether(2)(3) // should return 5.
-addTogether("http://bit.ly/IqT6zt") // should return undefined.
-addTogether(2, "3") // should return undefined.
-addTogether(2)([3]) // should return undefined
+
+console.log(addTogether(2)(3)) // should return 5.
+console.log(addTogether("http://bit.ly/IqT6zt")) // should return undefined.
+console.log(addTogether(2, "3")) // should return undefined.
+console.log(addTogether(2)([3])) // should return undefined
