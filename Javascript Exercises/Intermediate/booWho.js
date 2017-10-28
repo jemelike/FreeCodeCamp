@@ -8,11 +8,6 @@ Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write you
 Here are some helpful links:
 
 Boolean Objects
-Run tests (ctrl + enter)
-Reset your code
-Get a hint
-Ask for help on the forum
-
   * Your output will go here.
   * Any console.log() -type
   * statements will appear in
@@ -22,11 +17,17 @@ Ask for help on the forum
 
 function booWho(bool) {
     // What is the new fad diet for ghost developers? The Boolean.
+    if (typeof bool === 'boolean')
+        bool = true;
+    else
+        bool = false;
+    console.log(bool);
     return bool;
 }
 
-booWho(null);
 
+booWho(null);
+console.log("begin:");
 booWho(true) // should return true.
 booWho(false) //should return true.
 booWho([1, 2, 3]) // should return false.
